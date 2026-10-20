@@ -1,0 +1,43 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 3.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./munge_sumstats.py \
+--sumstats work/execfunction.forldsc.tsv \
+--out work/execfunction \
+--chunksize 500000 \
+--signed-sumstats Z,0 
+
+Interpreting column names as follows:
+SNP:	Variant ID (e.g., rs number)
+A1:	Allele 1, interpreted as ref allele for signed sumstat.
+A2:	Allele 2, interpreted as non-ref allele for signed sumstat.
+Z:	Directional summary statistic as specified by --signed-sumstats.
+P:	p-Value
+N:	Sample size
+
+Reading sumstats from work/execfunction.forldsc.tsv into memory 500000 SNPs at a time.
+Read 1475377 SNPs from --sumstats file.
+Removed 0 SNPs with missing values.
+Removed 0 SNPs with INFO <= 0.9.
+Removed 0 SNPs with MAF <= 0.01.
+Removed 0 SNPs with out-of-bounds p-values.
+Removed 226050 variants that were not SNPs or were strand-ambiguous.
+1249327 SNPs remain.
+Removed 0 SNPs with duplicated rs numbers (1249327 SNPs remain).
+Removed 0 SNPs with N < 284691.3333333333 (1249327 SNPs remain).
+Median value of SIGNED_SUMSTATS was 0.00948, which seems sensible.
+Writing summary statistics for 1249327 SNPs (1249327 with nonmissing beta) to work/execfunction.sumstats.gz.
+
+Metadata:
+Mean chi^2 = 1.911
+Lambda GC = 1.624
+Max chi^2 = 82.839
+2518 Genome-wide significant SNPs (some may have been removed by filtering).
+
+Conversion finished at Thu Sep 10 04:21:24 2026
+Total time elapsed: 9.46s

@@ -1,0 +1,10 @@
+data/
+work/
+bin/
+.venv/
+*.sumstats.gz
+*.gz
+*.zip
+results/magma/*.genes.raw
+results/magma/*.genes.out
+__pycache__/

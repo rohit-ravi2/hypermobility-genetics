@@ -1,0 +1,40 @@
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile data/ref/g1000_eur
+	--pval work/pval/ASD.tsv use=SNP,P ncol=N
+	--gene-annot work/annot_10kb.genes.annot
+	--out results/magma_ASD
+
+Start time is 15:50:57, Friday 14 Aug 2026
+
+Loading PLINK-format data...
+Reading file data/ref/g1000_eur.fam... 503 individuals read
+Reading file data/ref/g1000_eur.bim... 22665064 SNPs read
+Preparing file data/ref/g1000_eur.bed... 
+
+Reading SNP synonyms from file data/ref/g1000_eur.synonyms (auto-detected)
+	read 6016767 mapped synonyms from file, mapping to 3921040 SNPs in the data
+	WARNING: detected 133 synonymous SNP pairs in the data
+	         skipped all synonym entries involved, synonymous SNPs are kept in analysis
+	         writing list of detected synonyms in data to supplementary log file
+Reading SNP p-values from file work/pval/ASD.tsv... 
+	detected 3 variables in file
+	using variable: SNP (SNP id)
+	using variable: P (p-value)
+	using variable: N (sample size; discarding SNPs with N < 50)
+	read 9112387 lines from file, containing valid SNP p-values for 7888478 SNPs in data (86.57% of lines, 34.8% of SNPs in data)
+	WARNING: file contained 105 SNPs (same IDs or synonyms) with duplications
+	         dropped all occurrences of each from analysis
+	         writing list of duplicated IDs to supplementary log file
+Loading gene annotation from file work/annot_10kb.genes.annot... 
+	19805 gene definitions read from file
+	found 18749 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+	writing gene analysis results to file results/magma_ASD.genes.out
+	writing intermediate output to file results/magma_ASD.genes.raw
+
+
+End time is 16:02:39, Friday 14 Aug 2026 (elapsed: 00:11:42)

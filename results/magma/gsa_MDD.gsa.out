@@ -1,0 +1,18 @@
+# TOTAL_GENES = 19451
+# TEST_DIRECTION = one-sided, positive (set), two-sided (covar)
+# CONDITIONED_INTERNAL = gene size, gene density, sample size, inverse mac, log(gene size), log(gene density), log(sample size), log(inverse mac)
+VARIABLE                 TYPE  NGENES         BETA     BETA_STD           SE            P
+CORE_SHARED               SET     175    -0.086656   -0.0081827     0.082045      0.85455
+CORE_JOINT_ONLY           SET      30     0.097429    0.0038234      0.19862      0.31188
+CORE_BRAIN_ONLY           SET      20     0.058919    0.0018884       0.2219      0.39531
+PV_MATRISOME              SET      69      0.20056     0.011924      0.13866     0.074047
+PNN_GO                    SET      10      0.66293     0.015028      0.36252     0.033734
+NABA_CORE_MATRISOME       SET     261    -0.013655   -0.0015712     0.069513      0.57787
+NABA_MATRISOME            SET    1003    -0.027011   -0.0059735     0.037145      0.76643
+NABA_COLLAGENS            SET      43     0.035616    0.0016728      0.17623      0.41992
+NABA_PROTEOGLYCANS        SET      32     0.033003    0.0013376      0.20903      0.43727
+RANDOM_LENMATCH_1         SET      67     0.038106    0.0022326      0.13286      0.38713
+RANDOM_LENMATCH_2         SET      69     0.094955    0.0056456      0.12447      0.22278
+RANDOM_LENMATCH_3         SET      66   -0.0091619   -0.0005328      0.13234       0.5276
+RANDOM_LENMATCH_4         SET      66     0.024414    0.0014198      0.12466      0.42236
+RANDOM_LENMATCH_5         SET      68    -0.028329   -0.0016721      0.13382      0.58382
